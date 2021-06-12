@@ -20,12 +20,17 @@
     "new",
     "existing"
   ]
-		}
+		},
+
+	"storagecount": {
+		"type": "int",
+		 "defaultValue": 2
+	}
     },
     "resources": [
         {
 			"condition": "[equals(parameters('newOrExisting'),'new')]",
-            "name": "[variables('sikumarName')]",
+            "name": "[concat(copyIndex(),'storage', uniqueString(resourceGroup().id))]",
             "type": "Microsoft.Storage/storageAccounts",
             "location": "[resourceGroup().location]",
             "apiVersion": "2015-06-15",
@@ -35,7 +40,11 @@
             },
             "properties": {
                 "accountType": "[parameters('sikumarType')]"
-            }
+            },
+			"copy": {
+        "name": "storagecopy",
+        "count": "[parameters('storagecount')]"
+      }
         }
     ],
     "variables": {
