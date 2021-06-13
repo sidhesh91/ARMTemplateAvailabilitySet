@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmName": {
+ 
+	  "value": "sikumarvm1"
+      
+    },
+    "adminUsername": {
+     
+	  "value": "azuser"
+     
+    },
+    "authenticationType": {
+    
+      "value": "password"
+     
+      
+    },
+
+    "dnsLabelPrefix": {
+    
+      "value": "sikumar91"
+      },
+	
+    "adminPasswordOrKey": {
+       "reference": {
+        "keyVault": {
+          "id": "/subscriptions/7385b1d1-0f93-47e0-acd9-de83a13e4936/resourcegroups/sikumar-soldel/providers/Microsoft.KeyVault/vaults/sikumar-keyvault"
+        },
+        "secretName": "sshpass"
+      }
+    },
+    
+    "ubuntuOSVersion": {
+      
+      "value": "18.04-LTS"
+      
+      
+    },
+    "location": {
+     
+      "value": "East US"
+    },
+    "VmSize": {
+      
+      "value": "Standard_B2s"
+      
+    },
+    "virtualNetworkName": {
+
+      "value": "vNet"
+      
+    },
+    "subnetName": {
+ 
+      "value": "Subnet"
+      
+	  },
+
+	
+    "networkSecurityGroupName": {
+      "value": "SecGroupNet"
+     
+    }
+  }
+}
+ 
