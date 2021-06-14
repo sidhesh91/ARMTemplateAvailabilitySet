@@ -57,5 +57,37 @@ az storage account create \
   
   
   
-  
+  -
+    
+    trigger:
+- master
+ 
+resources:
+- repo: self
+ 
+variables:  
+  imageRepository: 'multistagepipelines'  
+  tag: '$(Build.BuildId)'
+  vmImageName: 'ubuntu-latest'
+  uiTestFolder: 'uitests'
+ 
+stages:
+- stage: Build
+  displayName: Build and push stage
+  jobs:  
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)  
+    steps:
+      - task: Docker@2
+        displayName: Build and push an image to container registry
+        inputs:
+          containerRegistry: 'ACR Connection'
+          repository: '$(imageRepository)'
+          command: 'buildAndPush'
+          Dockerfile: '**/Dockerfile'
+          tags: |
+            latest
+            $(tag)
   
