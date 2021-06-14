@@ -1,0 +1,323 @@
+{
+  "name": "string",
+  "type": "Microsoft.Network/loadBalancers",
+  "apiVersion": "2020-07-01",
+  "location": "string",
+  "tags": {},
+  "extendedLocation": {
+    "name": "string",
+    "type": "EdgeZone"
+  },
+  "sku": {
+    "name": "string",
+    "tier": "string"
+  },
+  "properties": {
+    "frontendIPConfigurations": [
+      {
+        "id": "string",
+        "properties": {
+          "privateIPAddress": "string",
+          "privateIPAllocationMethod": "string",
+          "privateIPAddressVersion": "string",
+          "subnet": {
+            "id": "string",
+            "properties": {
+              "addressPrefix": "string",
+              "addressPrefixes": [
+                "string"
+              ],
+              "networkSecurityGroup": {
+                "id": "string",
+                "location": "string",
+                "tags": {},
+                "properties": {
+                  "securityRules": [
+                    {
+                      "id": "string",
+                      "properties": {
+                        "description": "string",
+                        "protocol": "string",
+                        "sourcePortRange": "string",
+                        "destinationPortRange": "string",
+                        "sourceAddressPrefix": "string",
+                        "sourceAddressPrefixes": [
+                          "string"
+                        ],
+                        "sourceApplicationSecurityGroups": [
+                          {
+                            "id": "string",
+                            "location": "string",
+                            "tags": {},
+                            "properties": {}
+                          }
+                        ],
+                        "destinationAddressPrefix": "string",
+                        "destinationAddressPrefixes": [
+                          "string"
+                        ],
+                        "destinationApplicationSecurityGroups": [
+                          {
+                            "id": "string",
+                            "location": "string",
+                            "tags": {},
+                            "properties": {}
+                          }
+                        ],
+                        "sourcePortRanges": [
+                          "string"
+                        ],
+                        "destinationPortRanges": [
+                          "string"
+                        ],
+                        "access": "string",
+                        "priority": "integer",
+                        "direction": "string"
+                      },
+                      "name": "string"
+                    }
+                  ]
+                }
+              },
+              "routeTable": {
+                "id": "string",
+                "location": "string",
+                "tags": {},
+                "properties": {
+                  "routes": [
+                    {
+                      "id": "string",
+                      "properties": {
+                        "addressPrefix": "string",
+                        "nextHopType": "string",
+                        "nextHopIpAddress": "string"
+                      },
+                      "name": "string"
+                    }
+                  ],
+                  "disableBgpRoutePropagation": "boolean"
+                }
+              },
+              "natGateway": {
+                "id": "string"
+              },
+              "serviceEndpoints": [
+                {
+                  "service": "string",
+                  "locations": [
+                    "string"
+                  ]
+                }
+              ],
+              "serviceEndpointPolicies": [
+                {
+                  "id": "string",
+                  "location": "string",
+                  "tags": {},
+                  "properties": {
+                    "serviceEndpointPolicyDefinitions": [
+                      {
+                        "id": "string",
+                        "properties": {
+                          "description": "string",
+                          "service": "string",
+                          "serviceResources": [
+                            "string"
+                          ]
+                        },
+                        "name": "string"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "ipAllocations": [
+                {
+                  "id": "string"
+                }
+              ],
+              "delegations": [
+                {
+                  "id": "string",
+                  "properties": {
+                    "serviceName": "string"
+                  },
+                  "name": "string"
+                }
+              ],
+              "privateEndpointNetworkPolicies": "string",
+              "privateLinkServiceNetworkPolicies": "string"
+            },
+            "name": "string"
+          },
+          "publicIPAddress": {
+            "id": "string",
+            "location": "string",
+            "tags": {},
+            "extendedLocation": {
+              "name": "string",
+              "type": "EdgeZone"
+            },
+            "sku": {
+              "name": "string",
+              "tier": "string"
+            },
+            "properties": {
+              "publicIPAllocationMethod": "string",
+              "publicIPAddressVersion": "string",
+              "dnsSettings": {
+                "domainNameLabel": "string",
+                "fqdn": "string",
+                "reverseFqdn": "string"
+              },
+              "ddosSettings": {
+                "ddosCustomPolicy": {
+                  "id": "string"
+                },
+                "protectionCoverage": "string",
+                "protectedIP": "boolean"
+              },
+              "ipTags": [
+                {
+                  "ipTagType": "string",
+                  "tag": "string"
+                }
+              ],
+              "ipAddress": "string",
+              "publicIPPrefix": {
+                "id": "string"
+              },
+              "idleTimeoutInMinutes": "integer"
+            },
+            "zones": [
+              "string"
+            ]
+          },
+          "publicIPPrefix": {
+            "id": "string"
+          }
+        },
+        "name": "string",
+        "zones": [
+          "string"
+        ]
+      }
+    ],
+    "backendAddressPools": [
+      {
+        "id": "string",
+        "properties": {
+          "loadBalancerBackendAddresses": [
+            {
+              "properties": {
+                "virtualNetwork": {
+                  "id": "string"
+                },
+                "ipAddress": "string",
+                "loadBalancerFrontendIPConfiguration": {
+                  "id": "string"
+                }
+              },
+              "name": "string"
+            }
+          ]
+        },
+        "name": "string"
+      }
+    ],
+    "loadBalancingRules": [
+      {
+        "id": "string",
+        "properties": {
+          "frontendIPConfiguration": {
+            "id": "string"
+          },
+          "backendAddressPool": {
+            "id": "string"
+          },
+          "probe": {
+            "id": "string"
+          },
+          "protocol": "string",
+          "loadDistribution": "string",
+          "frontendPort": "integer",
+          "backendPort": "integer",
+          "idleTimeoutInMinutes": "integer",
+          "enableFloatingIP": "boolean",
+          "enableTcpReset": "boolean",
+          "disableOutboundSnat": "boolean"
+        },
+        "name": "string"
+      }
+    ],
+    "probes": [
+      {
+        "id": "string",
+        "properties": {
+          "protocol": "string",
+          "port": "integer",
+          "intervalInSeconds": "integer",
+          "numberOfProbes": "integer",
+          "requestPath": "string"
+        },
+        "name": "string"
+      }
+    ],
+    "inboundNatRules": [
+      {
+        "id": "string",
+        "properties": {
+          "frontendIPConfiguration": {
+            "id": "string"
+          },
+          "protocol": "string",
+          "frontendPort": "integer",
+          "backendPort": "integer",
+          "idleTimeoutInMinutes": "integer",
+          "enableFloatingIP": "boolean",
+          "enableTcpReset": "boolean"
+        },
+        "name": "string"
+      }
+    ],
+    "inboundNatPools": [
+      {
+        "id": "string",
+        "properties": {
+          "frontendIPConfiguration": {
+            "id": "string"
+          },
+          "protocol": "string",
+          "frontendPortRangeStart": "integer",
+          "frontendPortRangeEnd": "integer",
+          "backendPort": "integer",
+          "idleTimeoutInMinutes": "integer",
+          "enableFloatingIP": "boolean",
+          "enableTcpReset": "boolean"
+        },
+        "name": "string"
+      }
+    ],
+    "outboundRules": [
+      {
+        "id": "string",
+        "properties": {
+          "allocatedOutboundPorts": "integer",
+          "frontendIPConfigurations": [
+            {
+              "id": "string"
+            }
+          ],
+          "backendAddressPool": {
+            "id": "string"
+          },
+          "protocol": "string",
+          "enableTcpReset": "boolean",
+          "idleTimeoutInMinutes": "integer"
+        },
+        "name": "string"
+      }
+    ]
+  },
+  "resources": []
+}
