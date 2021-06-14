@@ -1,0 +1,35 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"storageAccountName": {
+			"value": "sidhesh"
+		},
+		"adminUsername": {
+			"value": "azuser"
+		},
+		"adminPassword": {
+			 "reference": {
+        "keyVault": {
+          "id": "/subscriptions/c7f4a09f-d21f-42c6-8539-f89c621f6db7/resourcegroups/DemoServer-sidhesh/providers/Microsoft.KeyVault/vaults/keyvault-sidhesh"
+        },
+        "secretName": "azpass"
+      }
+		},
+		"dnsNameforLBIP": {
+			"value": "sidhesh-lb"
+		},
+		"lbName": {
+			"value": "sidhesh-publiclb"
+		},
+		"nicNamePrefix": {
+			"value": "sidheshnic"
+		},
+		"publicIPAddressName": {
+			"value": "sidheship"
+		},
+		"vnetName": {
+			"value": "sidheshvnet"
+		}
+	}
+}
