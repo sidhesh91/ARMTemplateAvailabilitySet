@@ -11,6 +11,12 @@ Esv3, Ev3, Easv4, Eav4, Ev4, Esv4, Edv4, Edsv4, Mv2, M, DSv2, Dv2
 
 
 
+Disk type	SSD	SSD	SSD	HDD
+Disk capacity: Ultra disks capacity ranges from 4 GiB up to 64 TiB.
+
+
+Premium SSD sizes 	P1	P2	P3	P4	P6	P10	P15	P20	P30	P40	P50	P60	P70	P80
+Disk size in GiB	4	8	16	32	64	128	256	512	1,024	2,048	4,096	8,192	16,384	32,767
 
 
 
