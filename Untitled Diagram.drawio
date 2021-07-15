@@ -1,1 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2021-07-13T06:55:14.088Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" version="14.8.5" etag="piyztI5gzNJg6C7_TxMs" type="github"><diagram id="ieMb-PpbLC6KsAsHNFLR">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-07-15T06:48:14.901Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" etag="ey0Hc-aa94anHYDDuQGd" version="14.8.5" type="github">
+  <diagram id="ieMb-PpbLC6KsAsHNFLR" name="Page-1">
+    <mxGraphModel dx="1108" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-5" value="sonarqube server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6JkZnk-BP_xaUwYg66VQ-6" target="6JkZnk-BP_xaUwYg66VQ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-6" value="sonar scanner" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-9" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6JkZnk-BP_xaUwYg66VQ-11" target="6JkZnk-BP_xaUwYg66VQ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-11" value="build&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="260" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6JkZnk-BP_xaUwYg66VQ-12" target="6JkZnk-BP_xaUwYg66VQ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-12" value="static analysis" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="260" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-13" value="CI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="210" width="550" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-14" value="CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="210" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6JkZnk-BP_xaUwYg66VQ-15" target="6JkZnk-BP_xaUwYg66VQ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-15" value="unit tests" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-16" value="code coverage" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-17" value="sonar qube" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="330" width="105" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-21" value="node package libraries/gradle/maven/" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="330" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6JkZnk-BP_xaUwYg66VQ-22" value="node package/instanbul/gradle" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="330" width="125" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
